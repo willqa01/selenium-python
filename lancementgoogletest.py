@@ -1,5 +1,7 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+
 
 # Spécifiez le chemin vers le fichier chromedriver.exe (assurez-vous de télécharger la version compatible avec votre version de Chrome)
 chrome_driver_path = r"D:\Driver\chromedriver.exe"
@@ -16,6 +18,8 @@ driver.get("http://127.0.0.1:5500/test.html")   # direction vers une page web sp
 
 # Faites d'autres actions avec le navigateur...
 
+test = driver.find_element(By.CLASS_NAME, "information")
+test.send_keys("admin@localhost.dev")
 # Fermez le navigateur à la fin     #driver.quit()   # quite le navigateur  ...
 input()
 
