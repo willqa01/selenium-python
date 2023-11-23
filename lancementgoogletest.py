@@ -11,7 +11,8 @@ service = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=service)
 
 # Accédez à une URL
-driver.get("https://selenium.dev")   # direction vers une page web specifique
+driver.get("http://127.0.0.1:5500/test.html")   # direction vers une page web specifique
+#driver.get("https://www.google.fr")
 
 # Faites d'autres actions avec le navigateur...
 
