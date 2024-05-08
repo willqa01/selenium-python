@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 import time
 
 # Spécifiez le chemin vers le fichier chromedriver.exe (assurez-vous de télécharger la version compatible avec votre version de Chrome)
-chrome_driver_path = r"D:\Driver\chromedriver.exe"
+chrome_driver_path = r"I:\Driver\chromedriver.exe"
  
 # Créez une instance du service Chrome
 service = Service(chrome_driver_path)
